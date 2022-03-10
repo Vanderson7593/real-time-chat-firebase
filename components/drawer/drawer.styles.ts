@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import styled from "@emotion/styled";
 import { makeStyles, createStyles } from "@mui/styles";
 import MuiAppBar from "@mui/material/AppBar";
