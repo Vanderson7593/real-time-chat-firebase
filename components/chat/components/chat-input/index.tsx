@@ -3,11 +3,9 @@ import { FC, useRef } from "react";
 import { Send as SendIcon } from "@mui/icons-material";
 import { Container } from "./chat-input.styles";
 import { useAppDispatch, useAppSelector } from "../../../../redux/hooks";
-import {
-  currentChannelSelector,
-  startSendMessage,
-} from "../../../../redux/channels/channels.slice";
+import { currentChannelSelector } from "../../../../redux/channels/channels.selectors";
 import { IChannel } from "../../../../types/channel";
+import { startSendMessage } from "../../../../redux/channels/channels.thunks";
 
 const ChatInput: FC = () => {
   const inputRef = useRef<HTMLInputElement>(null);
