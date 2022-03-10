@@ -1,0 +1,1 @@
+export const formatParam = (x: string) => x.replaceAll(' ', '-').toLowerCase()
